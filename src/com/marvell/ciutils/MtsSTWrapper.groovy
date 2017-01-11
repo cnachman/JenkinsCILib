@@ -1,8 +1,13 @@
 #!groovy
 package com.marvell.ciutils
 
-@Singleton 
 public class MtsSTWrapper{
+    private static final MtsSTWrapper instance = new MtsSTWrapper();
+    
+    public static StringUtil getInstance(){
+        return instance;    
+    } 
+    
     public def mts
     def env
     def steps
