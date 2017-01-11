@@ -4,7 +4,7 @@ package com.marvell.ciutils
 public class MtsSTWrapper{
     private static final MtsSTWrapper instance = new MtsSTWrapper();
     
-    public static StringUtil getInstance(){
+    public static MtsSTWrapper getInstance(){
         return instance;
     } 
     
